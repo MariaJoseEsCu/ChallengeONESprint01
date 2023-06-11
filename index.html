@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">    <title>Alura Challenges: Encriptador </title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stylee.css">
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <img class="logo"src="imagenes/alura.svg" alt="Logo de Alura">
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <section class="seccionEntrada">
+                <textarea id="textAreaEntrada" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="seccionFooter">
+                    <p class="divError" id="divError"><i class="material-icons" style="font-size:13px;" >error</i><span> Ingresar solo letras minusculas y sin acentos</span></p>
+                    <div class="seccionBotones">
+                        <input type="submit" value="Encriptar" class="btnEncriptar" id="btnEncriptar">
+                        <input type="submit" value="Desencriptar" class="btnDesencriptar" id="btnDesencriptar">
+                    </div>
+                </div>
+            </section>
+            <section class="seccionSalida">
+                <textarea class="textAreaSalida" id="textAreaSalida"></textarea>
+                <img class="imgPersonaje" id = "imgPersonaje" src="imagenes/personaje.svg" alt="Personaje de alura">
+                <p class="textMsj" id="textMsj">Ningún mensaje fue encontrado</p>
+                <p class="textInfo" id="textInfo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <input type="submit" value="Copiar" class="btnCopiar" id="btnCopiar">
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">&copy Maria Jose Estrada Cruz -2023</p>
+    </footer>
+</body>
+<script src="js/funcionalida.js"></script>
+</html>

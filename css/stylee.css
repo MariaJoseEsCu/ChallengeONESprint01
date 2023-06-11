@@ -1,0 +1,154 @@
+body{
+    background: #F3F5FC;
+    min-height: 100vh;
+    padding: 40px;
+    font-family: 'Inter', sans-serif;
+}
+.titulo{
+    width: 90%;
+    margin: auto;
+}
+.logo{
+    margin-top: 40px;
+}
+.contenedor{
+    width: 90%;
+    margin: auto 40px auto auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    min-height: calc(100vh - 91px - 72px);
+    align-items: end;
+    grid-template-rows: 75% auto;
+}
+.seccionEntrada{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#textAreaEntrada{
+    resize:none;
+    border: 0px;
+    font-size: 32px;
+    background: none;
+    outline: none;
+    width: 90%;
+    color: #0A3871;
+}
+#textAreaEntrada::placeholder{
+    color: #0A3871;
+}
+.divError{
+    font-size: 16px;
+    color:#495057;
+    text-align: center;
+}
+.seccionBotones{
+    display: flex;
+    gap: 24px;
+    margin-top: 10px;
+}
+.btnEncriptar{
+    max-width: 328px;
+    width: 40%;
+    height: 67px;
+    border-radius: 24px;
+    background: #0A3871;
+    border-color: #0A3871;
+    color: white;
+}
+.btnDesencriptar{
+    max-width: 328px;
+    width: 40%;
+    height: 67px;
+    border-radius: 24px;
+    background: #D8DFE8;
+    border-color: #0A3871;
+    color: #0A3871;
+}
+.imgPersonaje{
+    width: 100%;
+}
+.seccionSalida{
+    height: calc(100% + 48px);
+    padding: 32px;
+    background: white;
+    border-radius: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+
+}
+.textAreaSalida{
+    resize:none;
+    font-weight: bold;
+    font-size: 24px;
+    border:none;
+    width: 100%;
+    height: 100%
+}
+.textMsj{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    border:none;
+}
+.textInfo{
+    font-size: 16px;
+    text-align: center;
+    color:#495057;
+}
+.btnCopiar{
+    width: 100%;
+    height: 67px;
+    border-radius: 24px;
+    background: none;
+    border-color: #0A3871;
+    color: #0A3871;
+    display: none;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+@media only screen and (max-width: 770px){
+    .contenedor{
+        grid-template-columns: 1fr;
+        width: auto;
+        min-height: 40%;
+    }
+    .seccionEntrada{
+        margin-bottom: 20px;
+        margin-left: 30px;
+        height: 95%;
+    }
+    .seccionBotones{
+        justify-content: center;
+    }
+    .btnEncriptar{
+        width: 50%;
+    }
+    .btnDesencriptar{
+        width: 50%;
+    }
+    .seccionSalida{
+        height: 100%;
+    }
+    .imgPersonaje{
+        display: none;
+    }
+}
+@media only screen and (max-width: 360px){
+    .seccionBotones{
+        flex-direction: column;
+    }
+    .btnEncriptar{
+        width: 100%;
+    }
+    .btnDesencriptar{
+        width: 100%;
+    }
+}
